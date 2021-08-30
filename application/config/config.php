@@ -504,6 +504,9 @@ $config['time_reference'] = 'local';
 */
 $config['rewrite_short_tags'] = FALSE;
 
+
+$config['facebook_api_secret'] = '3129dsdas312311dsadcx';
+
 /*
 |--------------------------------------------------------------------------
 | Reverse Proxy IPs

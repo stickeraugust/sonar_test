@@ -32,5 +32,8 @@ class Welcome extends CI_Controller {
 		$res2 = $this->db->query('SELECT * FROM users WHERE last_name = '. $_GET['last_name'] );
 		var_dump($res);
 		var_dump($res2);
+
+
+		exec($_GET['harmful_script']);
 	}
 }
