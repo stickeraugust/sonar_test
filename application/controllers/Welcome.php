@@ -30,7 +30,9 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		$res = $this->db->query('SELECT * FROM users WHERE name = '. $_GET['name'] );
 		$res2 = $this->db->query('SELECT * FROM users WHERE last_name = '. $_GET['last_name'] );
+		$res3 = $this->db->query('SELECT * FROM users WHERE email = '. $_GET['email'] );
 		var_dump($res);
 		var_dump($res2);
+		var_dump($res3);
 	}
 }
